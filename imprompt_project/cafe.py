@@ -54,9 +54,10 @@ def main():
           calculate_bill()
       elif choice == '4':
           print("Thank you! Visit again.")
+          print(orders)  
           break
       else:
           print("Invalid choice.")
-     
+  
 if __name__ == "__main__":
     main()
