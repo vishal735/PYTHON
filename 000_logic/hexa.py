@@ -9,5 +9,4 @@ while n!=0:
     print(rem)
     extra=str(rem)+extra
   n=n//16
-  
 print(extra)
