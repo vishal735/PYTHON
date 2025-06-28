@@ -1,0 +1,581 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Male_Fashion Template" />
+    <meta name="keywords" content="Male_Fashion, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Male-Fashion | {{title}}</title>
+    <!-- login register modal  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      id="roboto-subset.css-css"
+      href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5"
+      type="text/css"
+      media="all"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link
+      rel="stylesheet"
+      href="static/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="static/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="static/css/elegant-icons.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="static/css/magnific-popup.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="static/css/nice-select.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="static/css/owl.carousel.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="static/css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="offcanvas__option">
+        <div class="offcanvas__links">
+          <a href="#" data-toggle="modal" data-target="#exampleModal"
+            >Sign in</a
+          >
+          <a href="#">FAQs</a>
+        </div>
+        <div class="offcanvas__top__hover">
+          <span>Usd <i class="arrow_carrot-down"></i></span>
+          <ul>
+            <li>USD</li>
+            <li>EUR</li>
+            <li>USD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas__nav__option">
+        <a href="#" class="search-switch"
+          ><img src="static/img/icon/search.png" alt=""
+        /></a>
+        <a href="#"><img src="static/img/icon/heart.png" alt="" /></a>
+        <a href="#"
+          ><img src="static/img/icon/cart.png" alt="" /> <span>0</span></a
+        >
+        <div class="price">$0.00</div>
+      </div>
+      <div id="mobile-menu-wrap"></div>
+      <div class="offcanvas__text">
+        <p>Free shipping, 30-day return or refund guarantee.</p>
+      </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header fixed-top">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-7">
+              <div class="header__top__left">
+                <p>Free shipping, 30-day return or refund guarantee.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <div class="header__top__right">
+                <div class="header__top__links">
+                  <a href="#" data-toggle="modal" data-target="#exampleModal"
+                    >Sign in</a
+                  >
+                  <a href="#">FAQs</a>
+                </div>
+                <div class="header__top__hover">
+                  <span>Usd <i class="arrow_carrot-down"></i></span>
+                  <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <div class="header__logo">
+              <a href="./index.html"
+                ><img src="static/img/logo.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <nav class="header__menu mobile-menu">
+              <ul>
+                <li class="active"><a href="{%url 'index'%}">Home</a></li>
+                <li><a href="{%url 'shop'%}">Shop</a></li>
+                <li>
+                  <a href="#">Pages</a>
+                  <ul class="dropdown">
+                    <li><a href="{%url 'about'%}">About Us</a></li>
+                    <li><a href="{%url 'shopdetails'%}">Shop Details</a></li>
+                    <li><a href="{%url 'shoppingcart'%}">Shopping Cart</a></li>
+                    <li><a href="{%url 'checkout'%}">Check Out</a></li>
+                    <li><a href="{%url 'blogdetails'%}">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li><a href="{%url 'blog'%}">Blog</a></li>
+                <li><a href="{%url 'contact'%}">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="header__nav__option">
+              <a href="#" class="search-switch"
+                ><img src="static/img/icon/search.png" alt=""
+              /></a>
+              <a href="#"><img src="static/img/icon/heart.png" alt="" /></a>
+              <a href="#"
+                ><img src="static/img/icon/cart.png" alt="" /> <span>0</span></a
+              >
+              <div class="price">$0.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Login/Registration
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Pills navs -->
+            <ul
+              class="nav nav-pills nav-justified mb-3"
+              id="ex1"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active bg-dark text-light"
+                  id="tab-login"
+                  data-mdb-pill-init
+                  href="#pills-login"
+                  role="tab"
+                  aria-controls="pills-login"
+                  aria-selected="true"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link bg-dark text-light"
+                  id="tab-register"
+                  data-mdb-pill-init
+                  href="#pills-register"
+                  role="tab"
+                  aria-controls="pills-register"
+                  aria-selected="false"
+                  >Register</a
+                >
+              </li>
+            </ul>
+            <!-- Pills navs -->
+
+            <!-- Pills content -->
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="pills-login"
+                role="tabpanel"
+                aria-labelledby="tab-login"
+              >
+                <form>
+                  <div class="text-center mb-3">
+                    <p>Sign in with:</p>
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link btn-floating mx-1 text-dark"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link btn-floating mx-1 text-dark"
+                    >
+                      <i class="fab fa-google"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link btn-floating mx-1 text-dark"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link btn-floating mx-1 text-dark"
+                    >
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div>
+
+                  <p class="text-center">or:</p>
+
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="loginName" class="form-control" />
+                    <label class="form-label" for="loginName"
+                      >Email or username</label
+                    >
+                  </div>
+
+                  <!-- Password input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="loginPassword"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="loginPassword"
+                      >Password</label
+                    >
+                  </div>
+
+                  <!-- 2 column grid layout -->
+                  <div class="row mb-4">
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <!-- Checkbox -->
+                      <div class="form-check mb-3 mb-md-0">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="loginCheck"
+                          checked
+                        />
+                        <label
+                          class="form-check-label text-dark"
+                          for="loginCheck"
+                        >
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 d-flex justify-content-center text-dark"
+                    >
+                      <!-- Simple link -->
+                      <a href="#!" class="text-dark">Forgot password?</a>
+                    </div>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button
+                    type="submit"
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    class="btn btn-dark btn-block mb-4"
+                  >
+                    Sign in
+                  </button>
+
+                  <!-- Register buttons -->
+                  <div class="text-center">
+                    <p>
+                      Not a member? <a href="#!" class="text-dark">Register</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-register"
+                role="tabpanel"
+                aria-labelledby="tab-register"
+              >
+                <form>
+                  <div class="text-center mb-3">
+                    <p>Sign up with:</p>
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link btn-floating mx-1"
+                    >
+                      <i class="fab fa-facebook-f text-dark"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link btn-floating mx-1 text-dark"
+                    >
+                      <i class="fab fa-google"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link btn-floating mx-1 text-dark"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link btn-floating mx-1 text-dark"
+                    >
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div>
+
+                  <p class="text-center">or:</p>
+
+                  <!-- Name input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="registerName" class="form-control" />
+                    <label class="form-label" for="registerName">Name</label>
+                  </div>
+
+                  <!-- Username input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="text"
+                      id="registerUsername"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="registerUsername"
+                      >Username</label
+                    >
+                  </div>
+
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="registerEmail"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="registerEmail">Email</label>
+                  </div>
+
+                  <!-- Password input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="registerPassword"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="registerPassword"
+                      >Password</label
+                    >
+                  </div>
+
+                  <!-- Repeat Password input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="registerRepeatPassword"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="registerRepeatPassword"
+                      >Repeat password</label
+                    >
+                  </div>
+
+                  <!-- Submit button -->
+                  <button
+                    type="submit"
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    class="btn btn-dark btn-block mb-3"
+                  >
+                    Sign in
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Pills content -->
+          </div>
+        </div>
+      </div>
+    </div>
+    {%block body%} {%endblock%}
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer__about">
+              <div class="footer__logo">
+                <a href="#"><img src="static/img/footer-logo.png" alt="" /></a>
+              </div>
+              <p>
+                The customer is at the heart of our unique business model, which
+                includes design.
+              </p>
+              <a href="#"><img src="static/img/payment.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+            <div class="footer__widget">
+              <h6>Shopping</h6>
+              <ul>
+                <li><a href="#">Clothing Store</a></li>
+                <li><a href="#">Trending Shoes</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Sale</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="footer__widget">
+              <h6>Shopping</h6>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Delivary</a></li>
+                <li><a href="#">Return & Exchanges</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+            <div class="footer__widget">
+              <h6>NewLetter</h6>
+              <div class="footer__newslatter">
+                <p>
+                  Be the first to know about new arrivals, look books, sales &
+                  promos!
+                </p>
+                <form action="#">
+                  <input type="text" placeholder="Your email" />
+                  <button type="submit">
+                    <span class="icon_mail_alt"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="footer__copyright__text">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              <p>
+                Copyright ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                2020 All rights reserved | This template is made with
+                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              </p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+          <input type="text" id="search-input" placeholder="Search here....." />
+        </form>
+      </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.nice-select.min.js"></script>
+    <script src="static/js/jquery.nicescroll.min.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/jquery.countdown.min.js"></script>
+    <script src="static/js/jquery.slicknav.js"></script>
+    <script src="static/js/mixitup.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.umd.min.js"
+    ></script>
+  </body>
+</html>
